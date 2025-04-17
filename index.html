@@ -6,28 +6,99 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <button>About</button>
-    <button>Skills</button>
-    <button>Projects</button>
-    <button>Contact</button>
-    <h2>Sudheer</h2>
-    <p> I am a passionate web developer with a focus on front-end technologies.</p>
-        
-    <p>I am currently Pursuing my B.Tech in <em> Nannapaneni venkatarao college of engineering and technology </em> Tenali. </p> 
-    <p> I have learnt Web Development from<br>
-        Code With Swaroop. </p>
-       
-    
-    <p> You can <strong>Click here </strong> to Checkout What I have learnt in HTML.CSS.JS.</p>
-    <h2>My Skills</h2>
-    <ol>
-        <li> Python Basics</li>
-        <li> HTML Basics</li>
-        <li> CSS Basics</li>
-        <li> JavaScript Basics</li>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <a href="">
+            <button>
+                About
+            </button>
+        </a>
+        <a href="">
+            <button>
+                Skills
+            </button>
+        </a>
+        <a href="">
+            <button>
+                Projects
+            </button>
+        </a>
+        <a href="">
+            <button>
+                Contact
+            </button>
+        </a>
+    </header>
+    <main>
+        <section id="About">
+            <h2>Sudheer</h2>
+            <img style="width: 300px;" src="my.jpg" alt="">
+           <p> I am a passionate web developer with a focus on front-end technologies.</p>    
+           <p>I am currently Pursuing my B.Tech in <em> Nannapaneni venkatarao college of engineering and technology </em> Tenali. </p> 
+           <p> I have learnt Web Development from</p>
+           <p>Code With Swaroop.</p>
+           <p> You can <strong>Click here </strong> to Checkout What I have learnt in HTML.CSS.JS.</p>
+        </section>
 
-        
-    </ol>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ol>
+                <li> Python Basics</li>
+                <li> HTML Basics</li>
+                <li> CSS Basics</li>
+                <li> JavaScript Basics</li>
+            </ol>
+        </section>
+
+        <section id="Projects">
+            <h1>My Projects</h1>
+            <table border="1">
+                <tr>
+                    <th>Projects</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>I have built a Portfolio website by using HTML, CSS & JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Python simple Calculator</td>
+                    <td>I have built a simple calculator in the course by Code with Swaroop</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>
+                Feel free to get in touch with me using the form below:
+            </p>
+            <label for="">
+                Name:
+            </label>
+            <input type="text">
+            <br>
+            <label for="">Email:</label>
+            <input type="email">
+            <br>
+            <b>Choose you gender:</b>
+            <input type="radio" id="male" value="male">
+            <label for="">Male</label>
+            <input type="radio" id="female" value="female">
+            <label for="">Female</label>
+            <br>
+            <b>Select you interest:</b>
+            <input type="checkbox" id="Coding" value="Coding">
+            <label for="">Coding</label>
+            <input type="radio" id="Reading" value="Reading">
+            <label for="">Reading</label><br>
+            <label for="">Bio (up ot 200 characters):</label>
+            <input type="text">
+            <button>Submit</button>
+        </section>
+    </main>
+    <footer>
+        <p>@ 2025 My Portfolio</p>
+    </footer>
 </body>
 </html>
