@@ -4,11 +4,11 @@ import { GraduationCap, Hammer, ShieldAlert, Video, Briefcase } from "lucide-rea
 import { Section } from "./Section";
 
 const items = [
-  { Icon: GraduationCap, title: "Learning Programming", year: "2020", desc: "Started with Java and the fundamentals of CS." },
-  { Icon: Hammer, title: "Building Projects", year: "2021", desc: "Shipped full-stack web apps and personal tools." },
-  { Icon: ShieldAlert, title: "Exploring Web Security", year: "2022", desc: "Deep-dived into auth, JWT, and Spring Security." },
-  { Icon: Video, title: "Content Creation", year: "2023", desc: "Started teaching on YouTube and Instagram." },
-  { Icon: Briefcase, title: "Freelancing Journey", year: "2024", desc: "Building production apps for clients worldwide." },
+  { Icon: GraduationCap, title: "Learning Programming", year: "2023", desc: "Started with Java and the fundamentals of computer science." },
+  { Icon: ShieldAlert, title: "Exploring Web Security", year: "2024", desc: "Deep-dived into auth, JWT, and Spring Security." },
+  { Icon: Hammer, title: "Building Small Projects", year: "2025", desc: "Shipped small full-stack apps and personal tools to sharpen my skills." },
+  { Icon: Video, title: "Content Creation — Synmath Tech", year: "2026", desc: "Launched my YouTube channel teaching Java and growing on Instagram." },
+  { Icon: Briefcase, title: "Freelancing Journey", year: "2026", desc: "Open to building production-ready apps for clients worldwide." },
 ];
 
 export function Timeline() {
