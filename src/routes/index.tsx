@@ -1,19 +1,22 @@
+// Home route — the only TanStack Start wiring required by the Lovable
+// platform. The actual portfolio UI lives in plain React components under
+// src/components and could be dropped into any Vite + React project.
 import { createFileRoute } from "@tanstack/react-router";
-import { ThemeProvider } from "@/components/portfolio/ThemeProvider";
-import { Navbar } from "@/components/portfolio/Navbar";
-import { ScrollProgress } from "@/components/portfolio/ScrollProgress";
-import { Cursor } from "@/components/portfolio/Cursor";
-import { FloatingIcons } from "@/components/portfolio/FloatingIcons";
-import { Hero } from "@/components/portfolio/Hero";
-import { About } from "@/components/portfolio/About";
-import { Skills } from "@/components/portfolio/Skills";
-import { Services } from "@/components/portfolio/Services";
-import { Projects } from "@/components/portfolio/Projects";
-import { SecuritySection } from "@/components/portfolio/Security";
-import { Content } from "@/components/portfolio/Content";
-import { Timeline } from "@/components/portfolio/Timeline";
-import { Contact } from "@/components/portfolio/Contact";
-import { Footer } from "@/components/portfolio/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Navbar } from "@/components/Navbar";
+import { ScrollProgress } from "@/components/ScrollProgress";
+import { Cursor } from "@/components/Cursor";
+import { FloatingIcons } from "@/components/FloatingIcons";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Skills } from "@/components/Skills";
+import { Services } from "@/components/Services";
+import { Projects } from "@/components/Projects";
+import { SecuritySection } from "@/components/Security";
+import { Content } from "@/components/Content";
+import { Timeline } from "@/components/Timeline";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
