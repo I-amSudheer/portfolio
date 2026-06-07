@@ -96,7 +96,7 @@ export function Hero() {
           </motion.div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05]">
-            Hi, I'm <span className="gradient-text">Your Name</span>
+            Hi, I'm <span className="gradient-text">Y Siva Sai Sudheer</span>
           </h1>
           <p className="mt-4 text-xl sm:text-2xl font-semibold text-foreground/80">
             Software Developer · Full Stack Web Developer · Web Security Enthusiast
