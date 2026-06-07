@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import portrait from "@/assets/portrait.png.asset.json";
 
 const roles = [
   "Java Developer",
@@ -131,25 +132,15 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.3 }}
           className="relative hidden lg:block"
         >
-          <div className="relative aspect-square max-w-md mx-auto">
+          <div className="relative aspect-[3/4] max-w-md mx-auto">
             <div className="absolute -inset-4 gradient-primary rounded-[2.75rem] blur-2xl opacity-40 animate-pulse-glow" />
             <div className="relative h-full w-full rounded-[2.5rem] overflow-hidden glass shadow-glow ring-1 ring-primary/20">
-              {/* Replace /your-photo.jpg with your image (put it in /public or import from src/assets) */}
               <img
-                src="/your-photo.jpg"
+                src={portrait.url}
                 alt="Portrait"
                 className="h-full w-full object-cover"
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.display = "none";
-                }}
               />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 bg-gradient-to-br from-background/40 to-background/10 backdrop-blur-sm -z-0">
-                <div className="w-24 h-24 rounded-full gradient-primary flex items-center justify-center text-4xl font-bold text-primary-foreground shadow-glow mb-4">
-                  YN
-                </div>
-                <div className="text-sm text-muted-foreground">Your photo goes here</div>
-                <div className="text-xs text-muted-foreground/70 mt-1">Drop an image at <code className="font-mono">/public/your-photo.jpg</code></div>
-              </div>
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
             </div>
             <motion.div
               animate={{ y: [0, -15, 0] }}
