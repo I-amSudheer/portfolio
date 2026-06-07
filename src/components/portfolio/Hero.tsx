@@ -132,46 +132,36 @@ export function Hero() {
           className="relative hidden lg:block"
         >
           <div className="relative aspect-square max-w-md mx-auto">
-            <div className="absolute inset-0 gradient-primary rounded-[2.5rem] blur-2xl opacity-40 animate-pulse-glow" />
-            <div className="relative glass rounded-[2.5rem] p-8 shadow-glow h-full flex flex-col justify-between">
-              <div className="flex justify-between items-start">
-                <div>
-                  <div className="text-xs text-muted-foreground">Currently building</div>
-                  <div className="font-semibold mt-1">Secure REST APIs</div>
+            <div className="absolute -inset-4 gradient-primary rounded-[2.75rem] blur-2xl opacity-40 animate-pulse-glow" />
+            <div className="relative h-full w-full rounded-[2.5rem] overflow-hidden glass shadow-glow ring-1 ring-primary/20">
+              {/* Replace /your-photo.jpg with your image (put it in /public or import from src/assets) */}
+              <img
+                src="/your-photo.jpg"
+                alt="Portrait"
+                className="h-full w-full object-cover"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).style.display = "none";
+                }}
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 bg-gradient-to-br from-background/40 to-background/10 backdrop-blur-sm -z-0">
+                <div className="w-24 h-24 rounded-full gradient-primary flex items-center justify-center text-4xl font-bold text-primary-foreground shadow-glow mb-4">
+                  YN
                 </div>
-                <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse" />
-              </div>
-              <div className="font-mono text-xs space-y-2 bg-background/50 rounded-xl p-4">
-                <div><span className="text-purple">const</span> dev = {"{"}</div>
-                <div className="pl-4">stack: <span className="text-primary">'Java + React'</span>,</div>
-                <div className="pl-4">focus: <span className="text-primary">'Security'</span>,</div>
-                <div className="pl-4">status: <span className="text-emerald-500">'Available'</span></div>
-                <div>{"}"}</div>
-              </div>
-              <div className="grid grid-cols-3 gap-2 text-center">
-                {[
-                  { v: "3+", l: "Years" },
-                  { v: "25+", l: "Projects" },
-                  { v: "15+", l: "Clients" },
-                ].map((s) => (
-                  <div key={s.l} className="p-2 rounded-xl bg-background/40">
-                    <div className="text-lg font-bold gradient-text">{s.v}</div>
-                    <div className="text-[10px] text-muted-foreground">{s.l}</div>
-                  </div>
-                ))}
+                <div className="text-sm text-muted-foreground">Your photo goes here</div>
+                <div className="text-xs text-muted-foreground/70 mt-1">Drop an image at <code className="font-mono">/public/your-photo.jpg</code></div>
               </div>
             </div>
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="absolute -top-6 -right-6 glass rounded-2xl p-3 shadow-glow"
+              className="absolute -top-6 -right-6 glass rounded-2xl p-3 shadow-glow z-10"
             >
               <div className="text-2xl">⚛️</div>
             </motion.div>
             <motion.div
               animate={{ y: [0, 15, 0] }}
               transition={{ duration: 5, repeat: Infinity }}
-              className="absolute -bottom-4 -left-6 glass rounded-2xl p-3 shadow-glow"
+              className="absolute -bottom-4 -left-6 glass rounded-2xl p-3 shadow-glow z-10"
             >
               <div className="text-2xl">🔒</div>
             </motion.div>
