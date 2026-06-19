@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import portrait from "@/assets/portrait.png.asset.json";
+import portrait from "@/assets/sudheer.png";
 
 const roles = [
   "Java Developer",
@@ -157,7 +157,7 @@ export function Hero() {
           <div className="relative aspect-[3/4] max-w-md mx-auto">
             <div className="absolute -inset-4 gradient-primary rounded-[2.75rem] blur-2xl opacity-40 animate-pulse-glow" />
             <div className="relative h-full w-full rounded-[2.5rem] overflow-hidden glass shadow-glow ring-1 ring-primary/20">
-              <img src={portrait.url} alt="Portrait" className="h-full w-full object-cover" />
+              <img src={portrait} alt="Portrait" className="h-full w-full object-cover" />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
             </div>
             <motion.div
