@@ -5,10 +5,10 @@ import { Section } from "./Section";
 
 const items = [
   { Icon: GraduationCap, title: "Learning Programming", year: "2023", desc: "Started with Java and the fundamentals of computer science." },
-  { Icon: ShieldAlert, title: "Exploring Web Security", year: "2024", desc: "Deep-dived into auth, JWT, and Spring Security." },
-  { Icon: Hammer, title: "Building Small Projects", year: "2025", desc: "Shipped small full-stack apps and personal tools to sharpen my skills." },
-  { Icon: Video, title: "Content Creation — Synmath Tech", year: "2026", desc: "Launched my YouTube channel teaching Java and growing on Instagram." },
-  { Icon: Briefcase, title: "Freelancing Journey", year: "2026", desc: "Open to building production-ready apps for clients worldwide." },
+  { Icon: ShieldAlert, title: "Started Web Development", year: "2024", desc: "Learned HTML, CSS, JavaScript, React, and Git." },
+  { Icon: Hammer, title: "Learning React & SQL", year: "2025", desc: "Built small React projects and learned SQL database fundamentals." },
+  { Icon: Video, title: "Full-Stack Development & Security", year: "2026", desc: "Learning Spring Boot, JWT Authentication, Spring Security, PostgreSQL, and building full-stack applications." },
+  { Icon: Briefcase, title: "Content Creation — Synmath Tech", year: "2026", desc: "Sharing programming knowledge and documenting my learning journey through educational content." },
 ];
 
 export function Timeline() {

@@ -10,7 +10,7 @@ const groups = [
       { name: "JavaScript", level: 90 },
       { name: "HTML", level: 95 },
       { name: "CSS", level: 90 },
-      { name: "Bootstrap", level: 85 },
+      // { name: "Bootstrap", level: 85 },
       { name: "Tailwind CSS", level: 88 },
     ],
   },

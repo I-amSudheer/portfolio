@@ -5,9 +5,9 @@ import { Mail, Github, Linkedin, Instagram, Youtube, Send, CheckCircle2 } from "
 import { Section } from "./Section";
 
 const socials = [
-  { Icon: Mail, label: "Email", href: "mailto:hello@example.com" },
-  { Icon: Github, label: "GitHub", href: "https://github.com" },
-  { Icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+  { Icon: Mail, label: "Email", href: "yalmarthisivasaisudheer@gmail.com" },
+  { Icon: Github, label: "GitHub", href: "https://github.com/I-amSudheer" },
+  { Icon: Linkedin, label: "LinkedIn", href: "linkedin.com/in/siva-sai-sudheer-yelamarthi-1b020a2bb" },
   { Icon: Instagram, label: "Instagram", href: "https://instagram.com" },
   { Icon: Youtube, label: "YouTube", href: "https://youtube.com" },
 ];
