@@ -30,6 +30,7 @@ const projects = [
     tech: ["HTML", "CSS", "Java Script", "RESTAPI", "Fetch API"],
     github: "https://github.com/I-amSudheer/Weather",
     live: "https://i-amsudheer.github.io/Weather/",
+    
   },
 ];
 
