@@ -4,7 +4,7 @@ import { Github, ExternalLink } from "lucide-react";
 import { Section } from "./Section";
 import p1 from "@/assets/ran_color.png";
 import p2 from "@/assets/pass_gen.png";
-import p3 from "@/assets/project3.jpg";
+import p3 from "@/assets/wether.png";
 
 const projects = [
   {
@@ -30,7 +30,7 @@ const projects = [
     tech: ["HTML", "CSS", "Java Script", "RESTAPI", "Fetch API"],
     github: "https://github.com/I-amSudheer/Weather",
     live: "https://i-amsudheer.github.io/Weather/",
-    
+
   },
 ];
 
