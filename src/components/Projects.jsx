@@ -40,7 +40,7 @@ export function Projects() {
       id="projects"
       eyebrow="Projects"
       title="Featured Work"
-      description="A selection of recent builds spanning full-stack apps and security tooling."
+      description="Interactive web applications built to strengthen my problem-solving skills and understanding of modern web development."
     >
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((p, i) => (
