@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { Section } from "./Section";
-import p1 from "@/assets/project1.jpg";
-import p2 from "@/assets/project2.jpg";
-import p3 from "@/assets/project3.jpg";
+import p1 from "@/num.jpg";
+import p2 from "@/pass_gen.jpg";
+import p3 from "@/ran_color.jpg";
 
 const projects = [
   {
